@@ -29,7 +29,18 @@ Run demo example
 python demo_v2.py --cfg-path eval_configs/minigptv2_eval.yaml  --gpu-id 0
 ```
 
-===========
+## Synthetic Dataset
+
+Randomly draw circles and square (with random color and size) on canvas and ask the model to perform a series of tasks:
+
+- Counting: how many red squares?
+- Spatial reasoning: what is on the left of the green circle?
+
+These are abilities that previous generation of models seem to be struggling with.
+
+![synthetic_data](synthetic_data.png)
+
+-----------
 
 # MiniGPT-V
 
