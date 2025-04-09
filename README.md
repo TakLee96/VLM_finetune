@@ -39,3 +39,14 @@ Randomly draw circles and square (with random color and size) on canvas and ask 
 These are abilities that previous generation of models seem to be struggling with.
 
 ![synthetic_data](synthetic_data.png)
+
+## Run Finetune Experiment
+
+Depending on your available number of GPUs, you can scale-up the training and adjust batch size
+```
+torchrun --nproc-per-node 1 train.py --cfg-path train_configs/minigptv2_finetune.yaml
+```
+
+Example: https://wandb.ai/jiahang-li/minigptv/runs/kjt2tn7q?nw=nwuserjiahang_li
+
+![synthetic_data](synthetic_finetune.png)
